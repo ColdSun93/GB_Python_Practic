@@ -2,3 +2,12 @@
 # Пример:
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
+
+x_one = int(input('x = '))
+y_one = int(input('y = '))
+
+x_two = int(input('x = '))
+y_two = int(input('y = '))
+
+result = ((x_two-x_one)**2 + (y_two-y_one)**2)**0.5
+print(result)
