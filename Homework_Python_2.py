@@ -3,7 +3,4 @@
 for x in range(2):
     for y in range(2):
         for z in range(2):
-
-            left_expres = x == 1 or y == 1 or z == 1
-            right_expres = x == 0 and y == 0 and z == 0
-            print(left_expres)
+            print((not (x or y or z)) == (not x and not y and not z))
