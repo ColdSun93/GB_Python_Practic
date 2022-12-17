@@ -2,3 +2,10 @@
 # Пример:
 # - 6782 -> 23
 # - 0,56 -> 11
+
+d = input('введите вещественное число ')
+a = list(d.replace(".", ""))
+result = 0
+for i in a:
+    result += int(i)
+print(result)
