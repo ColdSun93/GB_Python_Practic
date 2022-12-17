@@ -18,4 +18,3 @@ for i in range(size_range):
     array[array2[i]] = temp
 
 print(array)
-print(array2)
