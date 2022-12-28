@@ -2,7 +2,7 @@
 
 import random
 size = int(input('введите количество элементов '))
-array_one = [1, 2, 3, 4, 2, 5, 1, 2, 6, 3]
+array_one = []
 array_two = []
 for i in range(size):
     array_one.append(random.randint(1, size+10))
