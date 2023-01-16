@@ -24,9 +24,8 @@ def Coding_rle(str_data):
             previous_char = char
         else:
             count += 1
-    else:
-        str_result += str(count) + previous_char
-        return str_result
+    str_result += str(count) + previous_char
+    return str_result
 
 def Decoding_rle(str1_data):
     if not str1_data: return ''
