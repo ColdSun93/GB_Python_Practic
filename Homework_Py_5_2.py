@@ -59,7 +59,7 @@ def pve_smart(sweets,max_sweet):
     elif sweets % max_sweet == 0:
         return max_sweet-1
     else:
-        return sweets % max_sweet
+        return sweets % max_sweet-1
 
 
 sweets_play = int(input("Введите желаемое количество конфет - "))
