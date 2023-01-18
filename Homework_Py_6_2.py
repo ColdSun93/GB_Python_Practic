@@ -3,3 +3,12 @@
 # 5
 # 15
 # Вывод: [1, 9, 13, 14, 19]
+
+def search_elem_array():
+    array = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+    min = int(input("введите минимальный элемент "))
+    max = int(input("введите максимальный элемент "))
+    data =list((lambda indx: indx)(indx) for indx,val in enumerate(array) if min<val<max)
+    print(data)
+    
+search_elem_array()
