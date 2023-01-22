@@ -25,7 +25,7 @@ def write_data():
     
     str_data = id+' | '+ name+' | '+surname+' | '+telephone+' | '+comment
     # str_data = [1, 23, 34, 45, 56]
-    data.append(list(map(int, str_data.split(' | '))))
+    data.append(list(map(str, str_data.split(' | '))))
     # data.append(list(map(int, str_data)))
     print('1 - продолжить ввод;  0 - завершить ввод')
     key = cont.get_module()
