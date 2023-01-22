@@ -1,10 +1,7 @@
 
-def Save_file(name, data_save):
-    my_file = open(name, "w")
-    my_file.write(data_save)
-    my_file.close()
-
-def Overwrite_file(name, data_save):
-    my_file = open(name, "a")
-    my_file.write(data_save)
+def Save_file(name, data_save, operat):
+    my_file = open(name, operat)
+    for i in data_save:
+        my_file.writelines("%s\t" % st for st in i)
+        my_file.writelines("\n")  
     my_file.close()
