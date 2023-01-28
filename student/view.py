@@ -2,7 +2,7 @@ import storage_data as sd
 
 def get_module():
     num = int(input())
-    if 0 < num < 7:
+    if 0 < num < 8:
         return num
     else:
         print('Неверный ввод, введите заново')
@@ -35,5 +35,9 @@ def show_all_user(direct):
     for key, value in direct.items():
         print(f'Студент: {key}')
         for key_two,value_two in value.items():
-            print(f'Предмет: {key_two} Оценка:{value_two}')
+            if len(value_two)==0:
+                avg_val=0
+            else:
+                avg_val=round(sum(value_two)/len(value_two),2)
+            print(f'Предмет: {key_two} Оценки:{value_two} Средний бал:{avg_val}')
     return
